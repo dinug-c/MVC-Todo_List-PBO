@@ -6,7 +6,7 @@ import id.newtdev.todolist.view.TaskAdapter;
 
 public interface TaskInterface {
     void addTask(String nama, String tanggal);
-    void updateTask(TaskModel task);
+    void updateTask(String taskId, String taskName);
     void deleteTask(String id);
     void sortData(ArrayList<TaskModel> taskList, TaskAdapter taskAdapter);
     String getDate();

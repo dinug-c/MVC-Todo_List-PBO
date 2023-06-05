@@ -35,8 +35,8 @@ public class TaskController implements TaskInterface {
         todoRef.child(id).setValue(item);
     }
 
-    public void updateTask(TaskModel task){
-        todoRef.child(task.getIdTask()).setValue(task);
+    public void updateTask(String taskId, String taskName){
+        todoRef.child(taskId).child("namaTask").setValue(taskName);
     }
 
     public void deleteTask(String id){

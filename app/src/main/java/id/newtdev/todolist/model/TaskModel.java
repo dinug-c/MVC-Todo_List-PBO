@@ -10,6 +10,10 @@ public class TaskModel {
         this.tanggalTask = tanggalTask;
     }
 
+    public TaskModel(){
+
+    }
+
     public String getNamaTask(){
         return  namaTask;
     }
